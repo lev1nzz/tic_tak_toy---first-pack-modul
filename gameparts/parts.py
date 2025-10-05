@@ -1,9 +1,13 @@
 # Объявить класс.
 class Board:
     """Класс, который описывает игровое поле."""
+    # Новый атрибут.
+    field_size = 3
     
     def __init__(self):
-        self.board = [[' ' for _ in range(3)] for _ in range(3)]
+        self.board = [
+            [' ' for _ in range(self.field_size)] for _ in range(self.field_size)
+        ]
         
     # Метод, который отрабатывет ходы игроков.
     def make_move(self, row, col, player):
@@ -20,4 +24,3 @@ class Board:
             'Объект игрового поля размером '
             f'{self.field_size}x{self.field_size}'
         ) 
-            
