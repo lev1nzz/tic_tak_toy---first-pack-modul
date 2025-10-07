@@ -14,10 +14,10 @@ class Board:
         self.board[row][col] = player
         
     # Метод, который отрисовывает игровое поле.
-    def display(self):
-        for row in self.board:
-            print('|'.join(row))
-            print('-' * 5)
+    # def display(self):
+    #     for row in self.board:
+    #         print('|'.join(row))
+    #         print('-' * 5)
     
     def is_board_full(self):
         # цикл проходится по всеб столбцам игрового поля.
